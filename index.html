@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIL SOCIAL</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Your existing WhatsApp and Instagram Button styling */
+        .whatsapp_float,
+        .instagram_float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px black;
+            z-index: 100;
+        }
+
+        .whatsapp_float {
+            bottom: 40px;
+            left: 40px;
+        }
+
+        .instagram_float {
+            bottom: 120px;
+            left: 40px;
+            /* Adjust the position as needed */
+        }
+
+        .button-icon {
+            margin-top: 16px;
+        }
+
+        /* Additional styling for mobile responsiveness */
+        @media screen and (max-width: 767px) {
+            .button-icon {
+                margin-top: 10px;
+            }
+
+            .whatsapp_float,
+            .instagram_float {
+                width: 40px;
+                height: 40px;
+                font-size: 22px;
+            }
+
+            .whatsapp_float {
+                bottom: 20px;
+                left: 10px;
+            }
+
+            .instagram_float {
+                bottom: 110px;
+                left: 10px;
+                /* Adjust the position as needed */
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <a rel="noreferrer" href="https://api.whatsapp.com/send/?phone=972504868172" target="_blank" class="whatsapp_float">
+        <i class="fab fa-whatsapp button-icon"></i>
+    </a>
+
+    </a>
+    <!-- carousel -->
+
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="image/1.jpg">
+                <div class="content">
+                    <div class="author">GIL SOCIAL</div>
+                    <div class="title" dir="rtl">קורס השיווק המתקדם!</div>
+                    <div class="topic" dir="rtl">מה נלמד?</div>
+
+                    <div class="des" dir="rtl">
+                        <!-- lorem 50 -->
+                        במהלך הקורס, תקבלו ידע מעמיק וכלים מתקדמים שיאפשרו לכם להתמודד בצורה יעילה ויצירתית עם אתגרים
+                        שונים בתחום השיווק.
+
+                    </div>
+                    <div class="buttons">
+                        <button onclick="sendWhatsapp()">פרטים נוספים</button>
+                        <!-- <button>SUBSCRIBE</button> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/2.png">
+                <div class="content">
+                    <div class="author">GIL SOCIAL</div>
+                    <div class="title" dir="rtl">מציאת קהל יעד</div>
+                    <div class="topic" dir="rtl">מחקר שוק וניתוח צרכים</div>
+                    <div class="des" dir="rtl">
+
+                        למדו כיצד לבצע מחקר שוק יסודי ולנתח את צרכי הלקוח
+                    </div>
+                    <div class="buttons">
+                        <button onclick="sendWhatsapp()">פרטים נוספים</button>
+                        <!-- <button>SUBSCRIBE</button> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/3.jpg">
+                <div class="content">
+                    <div class="author" dir="rtl">יחסי ציבור</div>
+                    [ <div class="title" dir="rtl">בניית מימון ציבורי</div>
+                    <div class="topic" dir="rtl">שיווק דיגיטלי</div>
+                    <div class="des" dir="rtl">
+                        <!-- lorem 50 -->
+                        למדו כיצד לפרסם ולשווק את יתרון התחזקות המימון הציבורי של העסק
+                    </div>
+                    <div class="buttons">
+                        <button onclick="sendWhatsapp()">פרטים נוספים</button>
+                        <!-- <button>SUBSCRIBE</button> -->
+                    </div>
+                </div>
+            </div>
+          
+
+            <div class="item">
+                <img src="image/4.png">
+                <div class="content">
+                    <div class="author">GIL SOCIAL</div>
+                    <div class="title" dir="rtl"> כלים לשיווק העסק</div>
+                    <div class="topic" dir="rtl">שיווק דיגיטלי</div>
+                    <div class="des" dir="rtl">
+                        <!-- lorem 50 -->
+                        למדו איך לייעל את השיווק באמצעות כלים דיגיטליים, כמו פרסומת בגוגל, ניהול קמפיינים ברשתות חברתיות
+                        ובניית אתרים משפרי יעילות.
+                    </div>
+                    <div class="buttons">
+                        <button onclick="sendWhatsapp()">פרטים נוספים</button>
+                        <!-- <button>SUBSCRIBE</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="image/1.jpg">
+                <div class="content">
+                    <div class="title">
+                        עמוד 1
+                    </div>
+                    <div class="description">
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/2.png">
+                <div class="content">
+                    <div class="title">
+                        עמוד 2
+                    </div>
+                    <div class="description">
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/3.jpg">
+                <div class="content">
+                    <div class="title">
+                        עמוד 3
+                    </div>
+                    <div class="description">
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/4.png">
+                <div class="content">
+                    <div class="title">
+                        עמוד 4
+                    </div>
+                    <div class="description">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev">
+                < </button>
+                    <button id="next">
+                        >
+                    </button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <script src="app.js"></script>
+
+    <script>
+        const sendWhatsapp = () => {
+
+            var whatsappUrl = "https://wa.me/972504868172";
+            try {
+                window.open(whatsappUrl, "_blank");
+            } catch (error) {
+                console.error('Error opening WhatsApp:', error);
+                alert('לא ניתן לפתוח את WhatsApp, אנא בדוק את הגדרות הדפדפן שלך ונסה שוב.');
+            }
+        };
+    </script>
+</body>
+
+</html>
